@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leticia Harumi │ Encriptador (Alura │ ONE)</title>
+    <link rel="shortcut icon" href="/assets/img/imagemlogo.png">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header> 
+        <img class="logo" src="./assets/img/alura-logo.png" alt="Logo - Alura">
+    </header>
+
+    <main class="conteudo">
+        <section class="conteudoPrincipal">
+            <div class="boxConteudoPrincipal">
+                <div>
+                    <textarea class="conteudoPrincipalInput" placeholder="Digite seu texto"></textarea>
+                </div>
+
+                <div class="textoInfo">
+                    <i class="fa-solid fa-circle-exclamation"></i>
+                    <h6 class="info">Apenas letras minúsculas e sem acento.</h6>
+                </div>
+
+                <div class="btnPrincipais">
+                    <button class="btnCriptografar" onclick="clickCript()">Criptografar</button>
+                    <button class="btnDescriptografar" onclick="clickDescript()">Descriptografar</button>
+                </div>  
+            </div>
+        </section>
+
+        <section class="conteudoSecundario">
+            <div class="resultado">
+                <textarea class="textAreaResultado"></textarea>
+                <div class="textoResultado">
+                    <img src="./assets/img/not_found.png" alt="No result Image">
+                    <p>Nenhuma mensagem encontrada.</p>
+                    <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
+                </div>
+                <button onclick="copiarTexto()">Copiar</button>
+            </div>
+        </section>
+    </main>
+
+
+    <!--Footer-->
+    <footer>
+        <h4>2023 - criado por Leticia Uemura</h4>
+    </footer>
+
+    <script src="./script.js"></script>
+    
+</body>
+<script src="https://kit.fontawesome.com/a59c910c20.js"  crossorigin="anonymous"></script>
+</html>
